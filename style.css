@@ -1,0 +1,36 @@
+.tablestore_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tablestore_column {
+    flex: 1;
+    min-width: 120px;
+    padding: 5px;
+}
+
+.tablestore_compact {
+    margin: 0;
+    padding: 0;
+}
+
+.tablestore_column h4, .tablestore_column p {
+    margin: 0;
+}
+
+.tablestore_strong {
+    font-weight: bold;
+}
+
+.tablestore_gallery_box .caption {
+    display: none;
+}
+
+.tablestore_gallery_box .caption-label {
+    display: none;
+}
+
+.tablestore_image_detail {
+    word-wrap: normal;
+    word-break: break-all
+}
