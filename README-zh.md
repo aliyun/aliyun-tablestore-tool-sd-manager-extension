@@ -11,7 +11,15 @@
 
 # 使用
 
-## 1. 设置系统环境变量
+## 1. 下载安装插件
+1. 打开 `Extensions` 子页面。
+2. 打开 `Install from URL` 子页面。
+3. 在 `URL for extension's git repository` 输入 `https://github.com/aliyun/aliyun-tablestore-tool-sd-manager-extension.git` 。
+4. 点击 `Install` 按钮。
+5. 等待 5 秒, 你将会看到提示语 `Installed into stable-diffusion-webui/extensions/aliyun-tablestore-tool-sd-manager-extension. Use Installed tab to restart.`,
+   如果遇到了网络问题，你可以点击 `Install` 按钮重试几次。
+
+## 2. 设置系统环境变量
 
 在你启动 sd-web-ui 之前，请先设置如下操作系统环境变量。
 
@@ -25,10 +33,8 @@
 ##### 使用示范
 
 下面仅列举 linux 的环境变量修改。
-
-你可以临时性地在终端里启动 web-ui 脚本之前直接运行如下 export 相关命令。
-
-想永久生效，建议添加如下代码到自己的终端配置文件中，比如 `.bashrc`
+添加如下代码到自己的终端配置文件中，比如 `~/.bashrc` 中，注意需要执行 `source ~/.bashrc` 命令让本终端（Terminal）生效。
+如果你使用的是高版本的苹果 macos 操作系统，注意终端配置文件可能是 `~/.zshrc`。
 
 ```bash
 export OTS_ENDPOINT_ENV=https://demo-instance-name.cn-qingdao.ots.aliyuncs.com
@@ -37,7 +43,12 @@ export OTS_ACCESS_KEY_SECRET_ENV=access_key_secret_xxxxx
 export OTS_INSTANCE_NAME_ENV=demo-instance-name
 ```
 
-## 2. 在 sd-web-ui 中使用插件
+## 3. 在你的终端（Terminal）中完全重启  sd-web-ui 
+> 如果你不知道终端（Terminal）的概念，完全重启你的电脑也能达到同样的效果。
+
+设置好操作系统环境变量后，你可以重新启动你的 sd-web-ui 应用了。
+
+## 4. 在 sd-web-ui 中使用插件
 
 1. 点击进如本插件子页面.
     - ![首页](assets/home.jpg)
